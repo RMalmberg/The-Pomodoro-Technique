@@ -1,0 +1,269 @@
+/** Welcome to my code! */
+/** Arianna O'Neil */
+
+/** container stuff for each chunk of content */
+/** not sure which one i like better */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-fluid {
+    padding: 120px 60px;
+}
+
+.top-hello {
+  font-family: "Vibur", cursive;
+  font-size: 60px;
+  color: #BBD5D0;
+  text-transform: lowercase;
+}
+
+.to {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+}
+
+.SPO {
+  font-family:"Lobster", cursive;
+  font-size: 60px;
+  color: #BBD5D0;
+  text-transform: lowercase;
+}
+
+.about-text {
+  font-family:"Vibur", cursive;
+  font-size: 45px;
+  color: #BBD5D0;
+  text-transform: lowercase;
+}
+
+.todo-text {
+  font-family:"Vibur", cursive;
+  font-size: 45px;
+  color: #BBD5D0;
+  text-transform: lowercase;
+}
+
+.timer-text {
+  font-family:"Vibur", cursive;
+  font-size: 45px;
+  color: #BBD5D0;
+  text-transform: lowercase;
+}
+
+.masthead-subheading {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.filler-text {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #FFF;
+}
+
+/** background colors */
+
+.bg-lav {
+  background-color: #6D7993;
+}
+
+.bg-overcast {
+  background-color: #9099A2;
+}
+
+.bg-dusty {
+  background-color: #96858F;
+}
+
+.bg-paper {
+  background-color: #D5D5D5;
+}
+
+.bg-navy {
+  background-color: #28394A;
+}
+
+/** all navbar stuff */
+/** testing stuff w/ navbar and @media */
+.navbar {
+  margin-bottom: 0;
+  background-color: #6D7993 !important;
+  z-index: 999;
+  border: 0;
+  font-size: 20px !important;
+  line-height: 1.42857143 !important;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  border-radius: 0;
+  min-height:40px !important;
+
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 150px;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+#theNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: "Montserrat", -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-weight: 700;
+}
+
+.navbar li a, .navbar .navbar-brand {
+  color: #FFF !important;
+  font-size: 20px;
+  padding-top:10px !important; padding-bottom:0 !important;
+  height: 40px;
+}
+
+.navbar-nav li a:hover{
+  color: #FBBF46 !important;
+  background-color: #6D7993 !important;
+}
+
+.navbar-nav li.active a {
+  color: #6D7993 !important;
+  background-color: #FFF !important;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #6D7993 !important;
+  padding: 2 2;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.icon-bar {
+  color: #fff;
+}
+
+/** end nav stuff */
+
+/** divider stuff */
+
+.divider-custom {
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider-custom .divider-custom-line {
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  background-color: #2c3e50;
+  border-radius: 1rem;
+  border-color: #2c3e50 !important;
+}
+
+.divider-custom .divider-custom-line:first-child {
+  margin-right: 1rem;
+}
+
+.divider-custom .divider-custom-line:last-child {
+  margin-left: 1rem;
+}
+
+.divider-custom .divider-custom-icon {
+  color: #2c3e50 !important;
+  font-size: 2rem;
+}
+
+.divider-custom.divider-light .divider-custom-line {
+  background-color: #fff;
+}
+
+.divider-custom.divider-light .divider-custom-icon {
+  color: #fff !important;
+}
+
+
+.section-divider {
+  position: relative;
+}
+.section-divider:before {
+      font-family: '';
+      content: " ";
+      width: 6.5rem;
+      height: 6.5rem;
+      background: #6D7993;
+      border-radius: 100%;
+      position: absolute;
+      top: -3.25rem;
+      left: calc(50% - 3.25rem);
+      color: rgba(#2980b9, 0.5);
+      line-height: 6rem;
+      text-indent: 1.75rem;
+      font-size: 3rem;
+}
+
+.section-divider2{
+  position: relative;
+}
+
+.section-divider2:before {
+      font-family: '';
+      content: " ";
+      width: 6.5rem;
+      height: 6.5rem;
+      background: #9099A2;
+      border-radius: 100%;
+      position: absolute;
+      top: -3.25rem;
+      left: calc(50% - 3.25rem);
+      color: rgba(#2980b9, 0.5);
+      line-height: 6rem;
+      text-indent: 1.75rem;
+      font-size: 3rem;
+}
+
+.section-divider3{
+  position: relative;
+}
+
+.section-divider3:before {
+      font-family: '';
+      content: " ";
+      width: 6.5rem;
+      height: 6.5rem;
+      background: #28394A;
+      border-radius: 100%;
+      position: absolute;
+      top: -3.25rem;
+      left: calc(50% - 3.25rem);
+      color: rgba(#2980b9, 0.5);
+      line-height: 6rem;
+      text-indent: 1.75rem;
+      font-size: 3rem;
+}
+
+/** end divider stuff */
