@@ -71,6 +71,13 @@
   color: #FFF;
 }
 
+.footer-text {
+  font-family:"Vibur", cursive;
+  font-size: 45px;
+  color: #BBD5D0;
+  text-transform: lowercase;
+}
+
 /** background colors */
 
 .bg-lav {
@@ -91,6 +98,10 @@
 
 .bg-navy {
   background-color: #28394A;
+}
+
+.bg-cream {
+  background-color: #FEFBF3;
 }
 
 /** all navbar stuff */
@@ -143,7 +154,7 @@
 }
 
 .navbar-nav li a:hover{
-  color: #FBBF46 !important;
+  color: #BBD5D0 !important;
   background-color: #6D7993 !important;
 }
 
@@ -256,6 +267,26 @@
       width: 6.5rem;
       height: 6.5rem;
       background: #96858F;
+      border-radius: 100%;
+      position: absolute;
+      top: -3.25rem;
+      left: calc(50% - 3.25rem);
+      color: rgba(#2980b9, 0.5);
+      line-height: 6rem;
+      text-indent: 1.75rem;
+      font-size: 3rem;
+}
+
+.section-divider4{
+  position: relative;
+}
+
+.section-divider4:before {
+      font-family: '';
+      content: " ";
+      width: 6.5rem;
+      height: 6.5rem;
+      background: #28394A;
       border-radius: 100%;
       position: absolute;
       top: -3.25rem;
