@@ -34,7 +34,7 @@ Arianna O'Neil
 
   <!-- NAVBAR -->
   <nav class="navbar navbar-default text-uppercase navbar-fixed-top" role="navigation">
-  <div class="container">
+  <div class="container-nav">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#theNav">
         <span class="sr-only">Menu</span>
@@ -97,16 +97,39 @@ Arianna O'Neil
     </div>
     <div class="divider-custom-line"></div>
   </div>
-  <div class="row text-center" style="margin-top: 20px;">
-    <p class="filler-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc id cursus metus aliquam eleifend. Imperdiet sed euismod nisi porta. Bibendum ut tristique et egestas quis. Ut venenatis tellus in metus vulputate eu scelerisque felis. Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus.</p>
+  <div class="row text-center">
+      <p class="filler-text">Study-Plan-Organize was created for those who enjoy studying with
+        the methodology provided by the Pomodoro Technique®.</p>
+    </div>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-4">
+        <h3 class="mini-heading">What is Pomodoro?</h3>
+        <p class="filler-text">The Pomodoro Technique® is based on the Pomodoro theory of productivity, created by Francesco Cirillo,
+           where 25 minutes of work is balanced by a following 5 minutes of rest. After the fourth interval of 25 minutes, a 15 minute
+           break is taken. As it stands, this timer measures the 25 minute work period.</p>
+      </div>
+      <div class="col-md-4">
+        <h3 class="mini-heading">Benefits of Pomodoro</h3>
+        <p class="filler-text"> - Manage distractions & control your time</p>
+        <p class="filler-text"> - Increase accountability </p>
+        <p class="filler-text"> - Improve weekly and quarterly planning </p>
+        <p class="filler-text"> - Maintain motivation! </p>
+      </div>
+    </div>
+    <br>
+    <div class="row text-center">
+        <p class="mini-heading">What are you waiting for? Start studying!</p>
+      </div>
   </div>
-</div>
 <!-- /ABOUT -->
 
 <!-- CONTAINER DIVIDER-->
 <div class="section-divider2">
 </div>
 <!-- /CONTAINER DIVIDER-->
+
+
 <!-- TO DO LIST -->
 <div id="todo" class="bg-dusty container-fluid text-center">
   <h1 class="todo-text">To-Do List</h1>
@@ -117,8 +140,38 @@ Arianna O'Neil
     </div>
     <div class="divider-custom-line"></div>
   </div>
+
+<section class="container">
+
+  <div class="new-task-container box">
+
+  <label for="new-task">Add New Task</label>
+  <input type="text" id="new-task">
+    <button id="addTask">Add</button>
+
+  </div>
+
+  <div class="todo-list box">
+
+    <h2 class = "inc-text">Incomplete Tasks</h2>
+    <ul>
+    </ul>
+
+  </div> <!--/todo-list-->
+
+  <div class="complete-list box">
+
+    <h2 class = "comp-text">Completed Tasks</h2>
+    <ul>
+    </ul>
+
+
+  </div><!--/complete-list-->
+</section><!--/container-->
 </div>
 <!-- /TO DO LIST -->
+
+
 <!-- CONTAINER DIVIDER-->
 <div class="section-divider3">
 </div>
@@ -133,17 +186,55 @@ Arianna O'Neil
     </div>
     <div class="divider-custom-line"></div>
   </div>
+  <!-- end div for this -->
+  <div class="session-length">
+    <div class="pomodoro-length">
+      <p>Session Length</p>
+      <button class="btn btn-count" id="pomodoro-plus-btn">+</button>
+      <span class="pomodoro-minutes-count"></span>
+      <button class="btn btn-count" id="pomodoro-minus-btn">-</button>
+    </div>
+
+    <div class="break-time-length">
+      <p>Break Time</p>
+      <button class="btn btn-count" id="break-plus-btn">+</button>
+      <span class="break-minutes-count"></span>
+      <button class="btn btn-count" id="break-minus-btn">-</button>
+    </div>
+  </div>
+
+  <section class="clock">
+
+    <div class="clock-timer" id="clock-timer">
+      <span class="minutes"></span>:<span class="seconds"></span>
+    </div>
+
+    <div class="options">
+      <button class="btn btn-control start-pomodoro">Start</button>
+      <audio id="audio" src="https://www.soundjay.com/drinks/sounds/glass-clink-3.mp3" autostart="false"></audio>
+      <button class="btn btn-control break">Break</button>
+      <button class="btn btn-control reset hidden">Reset</button>
+    </div>
+
+  </section>
+
+</div>
 </div>
 <!-- /TIMER -->
+
+
 <!-- CONTAINER DIVIDER-->
 <div class="section-divider4">
 </div>
 <!-- /CONTAINER DIVIDER-->
 <!-- FOOTER HAS TO GO HERE -->
-<div id="footer" class="container-fluid text-center bg-cream">
+<div id="footer" class="container-fluid text-center bg-lav">
     <div class="row text-center" style="margin-top: 20px;">
-      <h1 class="footer-text">Footer stuff</h1>
+      <h1 class="footer-text">Want to learn more?</h1>
+      <a href="https://github.com/RMalmberg/The-Pomodoro-Technique"class='#'<i class="fab fa-github"></i></a>
   </div>
 <!-- /FOOTER -->
 </body>
+<script src="todo.js"></script>
+<script src="timer.js"></script>
 </html>
