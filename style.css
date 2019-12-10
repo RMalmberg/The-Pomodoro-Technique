@@ -1,0 +1,253 @@
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+.masthead {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media (min-width: 992px) {
+    .masthead {
+      height: 100vh; }
+
+.masthead .masthead-heading {
+  font-size: 60px;
+  line-height: 2.75rem;
+}
+
+.masthead .masthead-subheading {
+  font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/** just testing possible ideas out*/
+h3 {
+  font-family: "Segoe UI 27px", serif;
+  font-size: 50px;
+  color: #FFF;
+}
+
+h4 {
+    color: #FFF;
+}
+
+.indent {
+  text-indent: 30px;
+}
+
+.container-fluid {
+    padding: 120px 60px;
+}
+
+/** background colors */
+.bg-dusty {
+  background-color: #96858F;
+}
+
+.bg-lav {
+  background-color: #6D7993;
+}
+
+.bg-overcast {
+  background-color: #9099A2;
+}
+
+.bg-paper {
+  background-color: #D5D5D5;
+}
+
+.bg-navy {
+  background-color: #28394A;
+}
+
+.bg-cream {
+  background-color: #FEFBF3;
+}
+/** end background colors */
+
+/** text colors */
+
+.white-text {
+  color: #FFFFFF;
+}
+
+.cream-text {
+  color: #FEFBF3;
+}
+
+.pink-text {
+  color: #E3AE94;
+}
+
+.yellow-text {
+  color: #FBBF46;
+}
+
+.blue-text {
+  color: #BBD5D0;
+}
+
+.purple-text {
+  color: #9BA5B0;
+}
+
+.navy-text {
+  color: #28394A;
+}
+
+/** end text colors */
+
+/** all navbar stuff */
+/** testing stuff w/ navbar and @media */
+
+.navbar {
+  margin-bottom: 0;
+  background-color: #6D7993 !important;
+  z-index: 999;
+  border: 0;
+  font-size: 20px !important;
+  line-height: 1.42857143 !important;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  border-radius: 0;
+  min-height:40px !important;
+
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 150px;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+#theNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: "Montserrat", -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-weight: 700;
+}
+
+.navbar li a, .navbar .navbar-brand {
+  color: #FFF !important;
+  font-size: 20px;
+  padding-top:10px !important; padding-bottom:0 !important;
+  height: 40px;
+}
+
+.navbar-nav li a:hover{
+  color: #FBBF46 !important;
+  background-color: #6D7993 !important;
+}
+
+.navbar-nav li.active a {
+  color: #6D7993 !important;
+  background-color: #FFF !important;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #6D7993 !important;
+  padding: 2 2;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+/** divider stuff */
+
+.divider-custom {
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider-custom .divider-custom-line {
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  background-color: #2c3e50;
+  border-radius: 1rem;
+  border-color: #2c3e50 !important;
+}
+
+.divider-custom .divider-custom-line:first-child {
+  margin-right: 1rem;
+}
+
+.divider-custom .divider-custom-line:last-child {
+  margin-left: 1rem;
+}
+
+.divider-custom .divider-custom-icon {
+  color: #2c3e50 !important;
+  font-size: 2rem;
+}
+
+.divider-custom.divider-light .divider-custom-line {
+  background-color: #fff;
+}
+
+.divider-custom.divider-light .divider-custom-icon {
+  color: #fff !important;
+}
+
+/** end divider stuff */
+
+/** trying to get footer stuff to look normal */
+
+.footer {
+  padding: 40px 20px;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
