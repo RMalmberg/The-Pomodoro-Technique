@@ -405,6 +405,18 @@ li{
   float:right;
 }
 
+.foot {
+  padding: 40px 20px;
+}
+
+.iconicon{
+  color: white;
+}
+
+.iconicon:hover{
+  color:#BBD5D0;
+}
+
 /** end to do list stuff */
 
 /** timer stuff */
